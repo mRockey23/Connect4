@@ -1,0 +1,19 @@
+<br><br>
+<div class="gradient" fxLayout fxLayoutAlign="center">
+    <mat-card class="mainCard">
+      <div fxLayout="column">
+        <div id="welcome">
+              <h1 class="center">Welcome {{ (auth.user$ | async)?.displayName }}! </h1>
+              <h3 class="center">Ready to play Connect4?</h3>
+        </div>
+        <div id="divider">
+          <div fxLayout="row" fxLayoutAlign="center" id="buttonDiv">
+              <button mat-raised-button color="primary" (click)="newGame()" class="buttonSpread">Start Playing</button>
+              <button mat-raised-button color="primary" (click)="openModal()" class="buttonSpread">Join Game</button>
+              <button mat-raised-button color="primary" (click)="openLeaderboardModal()" class="buttonSpread">Leaderboard</button>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+</div>
+

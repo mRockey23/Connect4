@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  
+    <mat-toolbar-row>
+      <span class="center">Connect 4</span>
+        <div *ngIf="auth?.user$ | async as user; else loggedIn">
+            <button mat-raised-button type="button" class="btn-lg btn-primary" (click)="auth.signOut()">Sign Out!</button>
+        </div>
+        <ng-template #loggedIn>
+            <button mat-raised-button type="button" class="btn-lg btn-primary" (click)="auth.googleSignIn()">Sign In!</button>
+        </ng-template>
+    </mat-toolbar-row>
+
+</mat-toolbar>

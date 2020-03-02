@@ -1,0 +1,32 @@
+<div class="overlay" *ngIf="!game?.player2">
+    <div class="waiting-box">
+        <p class="waitingText">Waiting for player 2 to join...</p>
+        <p class="waitingText">Send this code to your friend:</p>
+        <p class="mat-display-1">{{ game?.docID }}</p>
+        <button mat-raised-button (click)="quitGame()" color="secondary">Quit</button>
+    </div>
+</div>
+
+<div class="overlay" *ngIf="game?.winner">
+    <div class="waiting-box">
+        <p class="winnerText center">The winner of the game is:</p>
+        <p class="mat-display-1"> {{game.winner === game.player1 ? 'Player 1' : 'Player 2' }} </p>
+        <button mat-raised-button (click)="quitGame()" color="secondary">Quit</button>
+    </div>
+</div>
+
+<div id="gameboard">
+
+        <div [class]="playerTurn ? 'col' : 'col-unclickable'" (click)="placePiece(i)" *ngFor="let col of game?.board; let i = index">
+            <div class="row" *ngFor="let value of col">
+                <div *ngIf="value === 0" class="nothing-piece"></div>
+                <div *ngIf="value === 1" class="yellow-piece"></div>
+                <div *ngIf="value === 2" class="red-piece"></div>
+            </div>
+        </div>
+        
+</div><br>
+
+<div id="playerDiv" [class]="game.playerTurn === game.player1 ? 'turnYellow' : 'turnRed'">
+    <p class="textColor">Current Turn: {{game.playerTurn === game.player1 ? 'Player 1' : 'Player 2' }}</p>
+</div>

@@ -1,0 +1,19 @@
+.center {
+    text-align: center;
+}
+
+#modal-buttons {
+    display: inline;
+}
+
+button {
+    width: 125px;
+}
+
+.makeblue {
+    color: #3f51b5;
+}
+
+.bolder {
+    font-weight: bold;
+}

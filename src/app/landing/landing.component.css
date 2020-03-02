@@ -1,0 +1,65 @@
+.mainCard{
+    width: 65%;
+    margin: 30px auto;
+    background: #3f51b5;
+    height: 25em;
+    color: black;
+    border-radius: 10px;
+}
+
+#divider{
+    background-color: #e0e0e0;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#buttonDiv{
+    margin: 0 auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h3{
+    margin-left: 20px;
+}
+
+#avatar{
+    height: 80px;
+    width: 80px;
+}
+
+#welcome{
+    display: inline-block;
+    width: 100%;
+}
+
+#signoutFab{
+    background-color: gray;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.center {
+    color: white;
+    text-align: center;
+}
+
+.buttonSpread {
+    width: 25%;
+    margin: 20px;
+    height: 40px;
+    font-size: 1.5vw;
+}
+
+.landingLinks{
+    text-decoration: none;
+    color: white;
+}

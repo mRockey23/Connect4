@@ -1,0 +1,12 @@
+<div class="center">
+<h1 mat-dialog-title>Enter game code below!</h1>
+<div mat-dialog-content>
+    <mat-form-field class="example-full-width">
+        <input [(ngModel)]="code" matInput placeholder="Game code">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions id="modal-buttons">
+  <button mat-raised-button (click)="closeDialog()" color="primary">Quit</button>
+  <button mat-raised-button (click)="joinGame()" [disabled]="code?.length === 0" color="primary" cdkFocusInitial>Join Game</button>
+</div>
+</div>

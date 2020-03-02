@@ -1,0 +1,11 @@
+.center {
+    text-align: center;
+}
+
+#modal-buttons {
+    display: inline;
+}
+
+button {
+    width: 125px;
+}

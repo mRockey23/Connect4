@@ -1,0 +1,115 @@
+.col {
+    float: left;
+    background-color: #3f51b5;
+}
+
+.col-unclickable {
+    float:left;
+    background-color: #3f51b5;
+    pointer-events: none;
+}
+
+.col:hover {
+    background-color: lightblue;
+}
+
+.row {
+    width: 75px;
+    height: 75px;
+}
+
+.red-piece {
+    width: 61px;
+    height: 61px;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: red;
+    margin: 7px;
+
+}
+
+.yellow-piece {
+    width: 61px;
+    height: 61px;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: yellow;
+    margin: 7px;
+
+}
+
+.nothing-piece {
+    width: 61px;
+    height: 61px;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: white;
+    margin: 7px;
+}
+
+.overlay {
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #88888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waiting-box {
+    width: 500px;
+    height: 275px;
+    background-color: #3f51b5;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.waitingText{
+    font-size: 16pt;
+}
+
+#gameboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#playerDiv {
+    margin: auto;
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textColor {
+    color:black;
+    font-size: 30px;
+}
+
+#inline {
+    display: inline-block;
+}
+
+.turnYellow {
+    background-color: yellow;
+}
+
+.turnRed {
+    background-color: red;
+}
+
+.winnerText {
+    font-size: 25px;
+}
+
+button {
+    width: 130px;
+}
